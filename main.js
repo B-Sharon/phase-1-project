@@ -10,6 +10,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const price = document.getElementById('price');
     const activityDetails = document.getElementById('activityDetails');
     const randomDetails = document.getElementById('randomActivityDetails');
+    const loadingIndicator = document.getElementById('loadingIndicator');
+
+    function fetchRandomActivity() {
+        showLoadingIndicator();
+        // Fetch random activity
+        // On success: hide loading indicator and display activity
+        // On error: hide loading indicator and display error message
+    }
+
+    function showLoadingIndicator() {
+        loadingIndicator.style.display = 'block';
+    }
+
+    function hideLoadingIndicator() {
+        loadingIndicator.style.display = 'none';
+    }
+
   
     // Function to fetch a random activity from the API
     function fetchRandomActivity() {
