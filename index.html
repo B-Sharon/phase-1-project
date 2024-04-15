@@ -1,27 +1,76 @@
 <!DOCTYPE html>
-<html lang = >
+<html lang = 'en'>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Fruit Information</title>
+        <title>Activity Oasis</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <div class = "container">
-            <h1>Fruit Information</h1>
 
-            <form id='fruit-form'>
-              <input id='search' type='text' placeholder="Enter a fruit name">
-              <input type='submit' name='submit'/>
-            </form>
+            <h1>Don't know what to do? <br>Click the button below to find a fun activity</h1>
+            
+
+            <!---- Displays the activity-->
+            <div id="activity">
+                <h3> Random Activity</h3>
+                <p>Click the button to generate a random activity.</p>
+                <button id="randomBtn">Random Activity</button>
+                <p id="randomActivityDetails"></p>
         
-            <div id='fruit-info'>
-              
             </div>
-        
+
+            <!---- Options of activities and parameter the user can specify-->
+            <div id="options">
+                <h3>Use the options below to guide you in generating an activity</h3>
+                <label for="activityType"> Type of Activity </label>
+                <select id="activityType">
+                    <option value="">Any</option>
+                    <option value="recreational">Recreational</option>
+                    <option value="Educational">Educational</option>
+                    <option value="social">Social</option>
+                    <option value="diy">DIY</option>
+                    <option value="charity">Charity</option>
+                    <option value="cooking">Cooking</option>
+                    <option value="relaxation">Relaxation</option>
+                    <option value="music">Music</option>
+                    <option value="busywork">Busywork</option>
+                </select>
+
+                <!--Number of participants-->
+                <label for="participants"> Number of Participants </label>
+                <input type="number" id="participants" min = "1" value = "1">
+
+                <!--Price-->
+                <label for="price">Price Factor Range</label>
+                <select id="price">
+                    <option value="">Any</option>
+                    <option value="0">Free</option>
+                    <option value="0.1-0.3">Inexpensive</option>
+                    <option value="0.4-0.7">Moderate</option>
+                    <option value="0.8-1.0">Expensive</option>
+                </select>
+
+                <!--Accessibility-->
+                <label for="accessibility">Accessibility</label>
+                <select id="accessibility">
+                    <option value="">Any</option>
+                    <option value="0.0 - 0.3">Easy</option>
+                    <option value="0.4 - 0.7">Medium</option>
+                    <option value="0.8 - 1.0">Hard</option>
+                </select>
+
+                <button id="generateBtn">Generate Activity</button>
+                <p id="activityDetails"></p>
+            </div>
+
         </div>
+        <footer>
+            <p>Copyright &copy; 2024 Activity Oasis</p>
+        </footer>
         
         <script src="./main.js"></script>
     </body>
