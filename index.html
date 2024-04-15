@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html lang = 'en'>
+<html lang='en'>
     <head>
+        <!-- Meta information -->
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Activity Oasis</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Link to external stylesheet -->
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <div class = "container">
+        <div class="container">
 
+            <!-- Title and introductory message -->
             <h1>Don't know what to do? <br>Click the button below to find a fun activity</h1>
-            
 
-            <!---- Displays the activity-->
+            <!-- Displays the activity -->
             <div id="activity">
-                <h3> Random Activity</h3>
+                <h3>Random Activity</h3>
                 <p>Click the button to generate a random activity.</p>
                 <button id="randomBtn">Random Activity</button>
                 <p id="randomActivityDetails"></p>
-        
             </div>
 
-            <!---- Options of activities and parameter the user can specify-->
+            <!-- Options of activities and parameters the user can specify -->
             <div id="options">
                 <h3>Use the options below to guide you in generating an activity</h3>
-                <label for="activityType"> Type of Activity </label>
+                <!-- Select type of activity -->
+                <label for="activityType">Type of Activity</label>
                 <select id="activityType">
                     <option value="">Any</option>
                     <option value="recreational">Recreational</option>
@@ -40,11 +42,11 @@
                     <option value="busywork">Busywork</option>
                 </select>
 
-                <!--Number of participants-->
-                <label for="participants"> Number of Participants </label>
-                <input type="number" id="participants" min = "1" value = "1">
+                <!-- Number of participants -->
+                <label for="participants">Number of Participants</label>
+                <input type="number" id="participants" min="1" value="1">
 
-                <!--Price-->
+                <!-- Price factor range -->
                 <label for="price">Price Factor Range</label>
                 <select id="price">
                     <option value="">Any</option>
@@ -54,7 +56,7 @@
                     <option value="0.8-1.0">Expensive</option>
                 </select>
 
-                <!--Accessibility-->
+                <!-- Accessibility -->
                 <label for="accessibility">Accessibility</label>
                 <select id="accessibility">
                     <option value="">Any</option>
@@ -63,15 +65,18 @@
                     <option value="0.8 - 1.0">Hard</option>
                 </select>
 
+                <!-- Button to generate activity -->
                 <button id="generateBtn">Generate Activity</button>
                 <p id="activityDetails"></p>
             </div>
 
         </div>
+        <!-- Footer section -->
         <footer>
             <p>Copyright &copy; 2024 Activity Oasis</p>
         </footer>
         
+        <!-- Script -->
         <script src="./main.js"></script>
     </body>
 </html>
