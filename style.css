@@ -1,78 +1,92 @@
+/* Apply styles to the entire body */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #9bd9f1;
+    font-family: Arial, sans-serif; /* Use Arial font with fallback to sans-serif */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #9bd9f1; /* Set background color */
 }
+
+/* Apply styles to h1 elements */
 h1 {
     text-align: center; /* Center the text horizontally */
     font-weight: bold; /* Make the text bold */
 }
+
+/* Apply styles to the container class */
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 800px; /* Set maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding */
 }
 
+/* Apply styles to the activity section */
 #activity {
     background-color: #f0f0f0; /* Light gray background */
-    padding: 20px;
-    border-radius: 10px;
+    padding: 20px; /* Add padding */
+    border-radius: 10px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Add space between sections */
 }
+
+/* Apply styles to the random activity details */
 #randomActivityDetails {
-    text-align: center; 
-    font-family: 'Arial', sans-serif;
-    font-size: 16px; 
-    font-weight: bold; 
-    color: #f7c1c1; 
-   
+    text-align: center; /* Center the text horizontally */
+    font-family: 'Arial', sans-serif; /* Use Arial font with fallback to sans-serif */
+    font-size: 16px; /* Set font size */
+    font-weight: bold; /* Make the text bold */
+    color: #f7c1c1; /* Set text color */
 }
+
+/* Apply styles to unordered list within random activity details */
 #randomActivityDetails ul {
     text-align: left; /* Align the list items to the left */
 }
 
-
+/* Apply styles to the options section */
 #options {
     background-color: #f0f0f0; /* Light gray background */
-    padding: 20px;
+    padding: 20px; /* Add padding */
     border: 1px solid #ddd; /* Light gray border */
-    border-radius: 10px;
+    border-radius: 10px; /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
     display: flex; /* Use flexbox layout */
     flex-direction: column; /* Arrange items in a column */
     gap: 10px; /* Spacing between items */
 }
+
+/* Apply styles to the activity details */
 #activityDetails {
-    text-align: justify;
-    color: #515b7c;
-    font-size: large; 
+    text-align: justify; /* Justify the text */
+    color: #515b7c; /* Set text color */
+    font-size: large; /* Set font size */
 }
 
+/* Apply styles to the button container */
 .button-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange items in a column */
+    gap: 10px; /* Spacing between items */
 }
 
+/* Apply styles to the generate button */
 #generateBtn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    justify-content: flex-end;
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Set cursor to pointer */
+    border-radius: 5px; /* Rounded corners */
+    justify-content: flex-end; /* Align button to flex end */
     margin-top: 10px; /* Add margin to create space between the options and the button */
 }
 
+/* Apply styles to the generate button on hover */
 #generateBtn:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue background color */
 }
 
+/* Apply styles to labels, selects, inputs, and buttons within options */
 #options label,
 #options select,
 #options input,
@@ -80,32 +94,33 @@ h1 {
     display: block; /* Display each option on a new line */
     margin-bottom: 10px; /* Add some space between each option */
 }
+
+/* Apply styles to the footer */
 footer {
-    text-align: center;
-    margin-top: 20px;
+    text-align: center; /* Center the text horizontally */
+    margin-top: 20px; /* Add space above the footer */
 }
 
-/* Style the random button */
+/* Apply styles to the random button */
 #randomBtn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Set cursor to pointer */
 }
 
+/* Apply styles to the random button on hover */
 #randomBtn:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Darker blue background color */
 }
 
-/* Style the random activity details */
+/* Apply styles to the random activity details */
 #randomActivityDetails {
-    font-style: italic;
-    color: #888;
+    font-style: italic; /* Italicize the text */
+    color: #888; /* Set text color */
 }
-
-
 
 /* Media query to show options section on larger screens */
 @media (min-width: 768px) {
