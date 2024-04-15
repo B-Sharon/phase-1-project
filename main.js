@@ -41,11 +41,15 @@ function formatActivity(data) {
 
 
     // Event listener for the "Random Activity" button
-    randomBtn.addEventListener('click', fetchRandomActivity);
+    randomBtn.addEventListener('click', (event) =>{
+        event.preventDefault();
+        fetchRandomActivity();
+    });
 
 
     // Event listener for the "Generate Activity" button
-    generateBtn.addEventListener('click', () => {
+    generateBtn.addEventListener('click', (event) => {
+      event.preventDefault();
       const typeValue = activityType.value;
       const participantsValue = participants.value;
       const accessibilityValue = accessibility.value;
