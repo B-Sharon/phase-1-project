@@ -121,21 +121,23 @@ footer {
     font-style: italic; /* Italicize the text */
     color: #888; /* Set text color */
 }
+
+/* Apply styles to the loading indicator */
 .loading-indicator {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
-    border: 3px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 3px solid #3498db;
-    width: 50px;
-    height: 50px;
+    display: none; /* Initially hide the loading indicator */
+    position: fixed; /* Fixed position */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the indicator */
+    width: 50px; /* Set width */
+    height: 50px; /* Set height */
+    border: 3px solid #f3f3f3; /* Border color */
+    border-radius: 50%; /* Rounded shape */
+    border-top: 3px solid #3498db; /* Top border color */
+    width: 50px; /* Set width */
+    height: 50px; /* Set height */
     -webkit-animation: spin 2s linear infinite; /* Safari */
-    animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite; /* Standard animation */
 }
 
 /* Safari */
@@ -144,16 +146,11 @@ footer {
     100% { -webkit-transform: rotate(360deg); }
 }
 
+/* Standard keyframes for animation */
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-
-
-
-
-
-
 
 /* Media query to show options section on larger screens */
 @media (min-width: 768px) {
