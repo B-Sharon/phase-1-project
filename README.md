@@ -23,6 +23,28 @@ To run any of the snippets from the phase-1-project repository, follow the steps
 
 
 # Project Overview
+## Project Structure
+
+The project is structured as follows:
+
+- **index.html**: The main HTML file that serves as the entry point to the application.
+
+- **style.css**: The CSS file containing styles for the application's layout and design.
+
+- **main.js**: The JavaScript file containing the logic for fetching and displaying random activities, handling user interactions, and interacting with the Bored API.
+
+- **README.md**: The markdown file containing project documentation, setup instructions, and other relevant information.
+
+- **LICENSE**: The license file containing information about the project's open-source license.
+
+- **.gitignore**: A file specifying which files and directories should be ignored by Git version control.
+
+
+
+
+
+
+
 ## Description
 This project aims to develop a user-friendly application powered by the Bored API (https://www.boredapi.com/). The Bored API provides a fun way to combat boredom by suggesting random activities along with details like type, participants, price and accessibility.
 
