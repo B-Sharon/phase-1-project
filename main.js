@@ -1,4 +1,7 @@
+//wait for the DOM to be fully loaded before executing the script
 document.addEventListener('DOMContentLoaded', () => {
+
+//get refernces to all the html elements
     const generateBtn = document.getElementById('generateBtn');
     const randomBtn = document.getElementById('randomBtn');
     const activityType = document.getElementById('activityType');
@@ -16,9 +19,9 @@ document.addEventListener('DOMContentLoaded', () => {
           if (data.error) {
             randomDetails.textContent = 'Error: ' + data.error;
           } else {
-            const activityList = formatActivity(data);
-            randomDetails.innerHTML = '';
-            randomDetails.appendChild(activityList);
+            const activityList = formatActivity(data); //Format the retrieved activity data
+            randomDetails.innerHTML = ''; // Clear any previous content displayed for random activity
+            randomDetails.appendChild(activityList); // Display the formatted random activity details
           }
         })
         .catch(error => {
@@ -36,7 +39,7 @@ function formatActivity(data) {
         activityList.appendChild(listItem);
       }
     }
-    return activityList;
+    return activityList; //return the populated unordered list containing the formatted activity details
   }
 
 
@@ -50,6 +53,8 @@ function formatActivity(data) {
     // Event listener for the "Generate Activity" button
     generateBtn.addEventListener('click', (event) => {
       event.preventDefault();
+
+      //get the selected values from the dropdown menus and input field
       const typeValue = activityType.value;
       const participantsValue = participants.value;
       const accessibilityValue = accessibility.value;
