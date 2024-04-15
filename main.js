@@ -99,7 +99,11 @@ function formatActivity(data) {
           activityDetails.textContent = 'Error fetching data: ' + error.message;
         });
     });
-  
+   // Mousemove event listener for the document
+   document.addEventListener('mousemove', (event) => {
+    // Log mouse coordinates
+    console.log('Mouse coordinates:', event.clientX, event.clientY);
+});
 
   });
   
